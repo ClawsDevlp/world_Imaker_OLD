@@ -6,6 +6,8 @@ add_definitions(-std=c++11)
 
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/CMake)
 
+# ///////// Fichiers du projet //////////////////
+file(GLOB_RECURSE MY_SOURCES src/*.cpp)
 
 # /////////  Eléments nécessaires  //////////////
 find_package(OpenGL REQUIRED)
@@ -31,12 +33,15 @@ add_library(GLAD STATIC "lib/glad/src/glad.c")
 add_library(STB_IMAGE STATIC "lib/stb_image/stb_image.cpp")
 file(GLOB_RECURSE IMGUI_SOURCES lib/imgui/*)
 add_library(IMGUI STATIC ${IMGUI_SOURCES})
+file(GLOB_RECURSE GLIMAC_SOURCES lib/glimac/*)
+add_library(GLIMAC STATIC ${GLIMAC_SOURCES})
 
 # ///////  Inclusions /////////////////////////
 include_directories(
     ${SDL2_INCLUDE_DIRS} 
     ${OPENGL_INCLUDE_DIR} 
     ${GLEW_INCLUDE_DIR} 
+    lib/glad/include
     lib/glimac/include
     lib/imgui 
     lib
@@ -46,14 +51,15 @@ include_directories(
 # ////// Construction ////////////////////////
 
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BUILD_TYPE})
-add_executable(${PROJECT_NAME} ${MY_COMMON} ${MY_SOURCES})
+add_executable(${PROJECT_NAME} ${MY_SOURCES})
 
 target_link_libraries(
-    ALL_LIBRARIES glimac
     ${PROJECT_NAME}
     ${OPENGL_LIBRARIES}
     ${SDL2_LIBRARIES}
     ${GLEW_LIBRARY}
+    GLAD
+    GLIMAC
     IMGUI
 )
 
