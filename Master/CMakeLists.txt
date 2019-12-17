@@ -32,16 +32,15 @@ endif()
 add_library(GLAD STATIC "lib/glad/src/glad.c")
 file(GLOB_RECURSE IMGUI_SOURCES lib/imgui/*)
 add_library(IMGUI STATIC ${IMGUI_SOURCES})
-file(GLOB_RECURSE GLIMAC_SOURCES lib/glimac/*)
-add_library(GLIMAC STATIC ${GLIMAC_SOURCES})
+add_subdirectory(lib/glimac)
 
 # ///////  Inclusions /////////////////////////
 include_directories(
     ${SDL2_INCLUDE_DIRS} 
     ${OPENGL_INCLUDE_DIR} 
     ${GLEW_INCLUDE_DIR} 
+    ${SRC_FILES}
     lib/glad/include
-    lib/glimac/include
     lib/imgui 
     lib
     src
