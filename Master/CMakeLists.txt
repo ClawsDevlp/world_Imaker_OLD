@@ -37,7 +37,8 @@ include_directories(
     ${SDL2_INCLUDE_DIRS} 
     ${OPENGL_INCLUDE_DIR} 
     ${GLEW_INCLUDE_DIR} 
-    lib/glimac/include 
+    lib/glimac/include
+    lib/imgui 
     lib
     src
     )
@@ -53,6 +54,7 @@ target_link_libraries(
     ${OPENGL_LIBRARIES}
     ${SDL2_LIBRARIES}
     ${GLEW_LIBRARY}
+    IMGUI
 )
 
 add_subdirectory(glimac)
