@@ -30,7 +30,6 @@ endif()
 # ------------------------------ BUILD IF NEEDED ------------------------------
 
 add_library(GLAD STATIC "lib/glad/src/glad.c")
-add_library(STB_IMAGE STATIC "lib/stb_image/stb_image.cpp")
 file(GLOB_RECURSE IMGUI_SOURCES lib/imgui/*)
 add_library(IMGUI STATIC ${IMGUI_SOURCES})
 file(GLOB_RECURSE GLIMAC_SOURCES lib/glimac/*)
@@ -62,8 +61,6 @@ target_link_libraries(
     GLIMAC
     IMGUI
 )
-
-add_subdirectory(glimac)
 
 if (UNIX)
     target_link_libraries(${PROJECT_NAME} -ldl)
