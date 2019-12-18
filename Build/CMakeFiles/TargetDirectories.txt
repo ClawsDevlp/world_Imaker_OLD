@@ -1,0 +1,10 @@
+/home/6im2/ebenhari/Documents/world_Imaker/Build/CMakeFiles/GLAD.dir
+/home/6im2/ebenhari/Documents/world_Imaker/Build/CMakeFiles/rebuild_cache.dir
+/home/6im2/ebenhari/Documents/world_Imaker/Build/CMakeFiles/world_Imaker.dir
+/home/6im2/ebenhari/Documents/world_Imaker/Build/CMakeFiles/IMGUI.dir
+/home/6im2/ebenhari/Documents/world_Imaker/Build/CMakeFiles/edit_cache.dir
+/home/6im2/ebenhari/Documents/world_Imaker/Build/lib/glimac/CMakeFiles/rebuild_cache.dir
+/home/6im2/ebenhari/Documents/world_Imaker/Build/lib/glimac/CMakeFiles/edit_cache.dir
+/home/6im2/ebenhari/Documents/world_Imaker/Build/lib/glimac/CMakeFiles/glimac.dir
+/home/6im2/ebenhari/Documents/world_Imaker/Build/lib/third-party/include/glm/CMakeFiles/rebuild_cache.dir
+/home/6im2/ebenhari/Documents/world_Imaker/Build/lib/third-party/include/glm/CMakeFiles/edit_cache.dir
