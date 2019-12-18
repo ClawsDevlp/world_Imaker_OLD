@@ -25,25 +25,22 @@ else()
 endif()
 
 # A décommenter sur machine de la fac
-# set(OPENGL_LIBRARIES /usr/lib/x86_64-linux-gnu/libGL.so.1)
+set(OPENGL_LIBRARIES /usr/lib/x86_64-linux-gnu/libGL.so.1)
 
 # ------------------------------ BUILD IF NEEDED ------------------------------
 
-add_library(GLAD STATIC "lib/glad/src/glad.c")
-file(GLOB_RECURSE IMGUI_SOURCES lib/imgui/*)
-add_library(IMGUI STATIC ${IMGUI_SOURCES})
 add_subdirectory(lib/glimac)
+add_subdirectory(lib/glm)
+
 
 # ///////  Inclusions /////////////////////////
 include_directories(
     ${SDL2_INCLUDE_DIRS} 
     ${OPENGL_INCLUDE_DIR} 
     ${GLEW_INCLUDE_DIR} 
-    ${SRC_FILES}
-    lib/glad/include
+    lib/glimac/include
     lib/third-party/include
-    lib/imgui 
-    lib
+    lib/glm
     src
     )
 
@@ -57,9 +54,7 @@ target_link_libraries(
     ${OPENGL_LIBRARIES}
     ${SDL2_LIBRARIES}
     ${GLEW_LIBRARY}
-    GLAD
     glimac
-    IMGUI
 )
 
 if (UNIX)
