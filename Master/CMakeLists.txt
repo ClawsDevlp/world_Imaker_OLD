@@ -41,6 +41,7 @@ include_directories(
     ${GLEW_INCLUDE_DIR} 
     ${SRC_FILES}
     lib/glad/include
+    lib/third-party/include
     lib/imgui 
     lib
     src
@@ -57,7 +58,7 @@ target_link_libraries(
     ${SDL2_LIBRARIES}
     ${GLEW_LIBRARY}
     GLAD
-    GLIMAC
+    glimac
     IMGUI
 )
 
