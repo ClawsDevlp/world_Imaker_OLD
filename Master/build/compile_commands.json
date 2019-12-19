@@ -1,0 +1,72 @@
+[
+{
+  "directory": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/build",
+  "command": "/usr/bin/g++-7   -I/usr/include/SDL2 -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/include -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/third-party/include -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/src  -g   -std=c++11 -o CMakeFiles/world_Imaker.dir/src/main.cpp.o -c /home/claclicla/Documents/ANNEE2/world_Imaker/Master/src/main.cpp",
+  "file": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/src/main.cpp"
+},
+{
+  "directory": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/build/lib/glimac",
+  "command": "/usr/bin/g++-7   -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/include  -g   -std=c++11 -o CMakeFiles/glimac.dir/src/Cone.cpp.o -c /home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Cone.cpp",
+  "file": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Cone.cpp"
+},
+{
+  "directory": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/build/lib/glimac",
+  "command": "/usr/bin/g++-7   -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/include  -g   -std=c++11 -o CMakeFiles/glimac.dir/src/Cube.cpp.o -c /home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Cube.cpp",
+  "file": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Cube.cpp"
+},
+{
+  "directory": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/build/lib/glimac",
+  "command": "/usr/bin/g++-7   -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/include  -g   -std=c++11 -o CMakeFiles/glimac.dir/src/Cursor.cpp.o -c /home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Cursor.cpp",
+  "file": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Cursor.cpp"
+},
+{
+  "directory": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/build/lib/glimac",
+  "command": "/usr/bin/g++-7   -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/include  -g   -std=c++11 -o CMakeFiles/glimac.dir/src/Geometry.cpp.o -c /home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Geometry.cpp",
+  "file": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Geometry.cpp"
+},
+{
+  "directory": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/build/lib/glimac",
+  "command": "/usr/bin/g++-7   -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/include  -g   -std=c++11 -o CMakeFiles/glimac.dir/src/GestionCube.cpp.o -c /home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/GestionCube.cpp",
+  "file": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/GestionCube.cpp"
+},
+{
+  "directory": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/build/lib/glimac",
+  "command": "/usr/bin/g++-7   -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/include  -g   -std=c++11 -o CMakeFiles/glimac.dir/src/Image.cpp.o -c /home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Image.cpp",
+  "file": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Image.cpp"
+},
+{
+  "directory": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/build/lib/glimac",
+  "command": "/usr/bin/g++-7   -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/include  -g   -std=c++11 -o CMakeFiles/glimac.dir/src/Imagev2.cpp.o -c /home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Imagev2.cpp",
+  "file": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Imagev2.cpp"
+},
+{
+  "directory": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/build/lib/glimac",
+  "command": "/usr/bin/g++-7   -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/include  -g   -std=c++11 -o CMakeFiles/glimac.dir/src/Program.cpp.o -c /home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Program.cpp",
+  "file": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Program.cpp"
+},
+{
+  "directory": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/build/lib/glimac",
+  "command": "/usr/bin/g++-7   -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/include  -g   -std=c++11 -o CMakeFiles/glimac.dir/src/Reglages.cpp.o -c /home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Reglages.cpp",
+  "file": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Reglages.cpp"
+},
+{
+  "directory": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/build/lib/glimac",
+  "command": "/usr/bin/g++-7   -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/include  -g   -std=c++11 -o CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o -c /home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/SDLWindowManager.cpp",
+  "file": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/SDLWindowManager.cpp"
+},
+{
+  "directory": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/build/lib/glimac",
+  "command": "/usr/bin/g++-7   -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/include  -g   -std=c++11 -o CMakeFiles/glimac.dir/src/Shader.cpp.o -c /home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Shader.cpp",
+  "file": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Shader.cpp"
+},
+{
+  "directory": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/build/lib/glimac",
+  "command": "/usr/bin/g++-7   -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/include  -g   -std=c++11 -o CMakeFiles/glimac.dir/src/Sphere.cpp.o -c /home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Sphere.cpp",
+  "file": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/Sphere.cpp"
+},
+{
+  "directory": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/build/lib/glimac",
+  "command": "/usr/bin/g++-7   -I/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/include  -g   -std=c++11 -o CMakeFiles/glimac.dir/src/tiny_obj_loader.cpp.o -c /home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/tiny_obj_loader.cpp",
+  "file": "/home/claclicla/Documents/ANNEE2/world_Imaker/Master/lib/glimac/src/tiny_obj_loader.cpp"
+}
+]

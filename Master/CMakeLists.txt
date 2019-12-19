@@ -7,7 +7,7 @@ add_definitions(-std=c++11)
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/CMake)
 
 # ///////// Fichiers du projet //////////////////
-file(GLOB_RECURSE MY_SOURCES src/*.cpp)
+file(GLOB_RECURSE MY_SOURCES src/*.cpp )
 
 # /////////  Eléments nécessaires  //////////////
 find_package(OpenGL REQUIRED)
@@ -28,7 +28,7 @@ else()
 endif()
 
 # A décommenter sur machine de la fac
-set(OPENGL_LIBRARIES /usr/lib/x86_64-linux-gnu/libGL.so.1)
+# set(OPENGL_LIBRARIES /usr/lib/x86_64-linux-gnu/libGL.so.1)
 
 # ------------------------------ BUILD IF NEEDED ------------------------------
 
@@ -38,12 +38,13 @@ add_subdirectory(lib/glm)
 
 # ///////  Inclusions /////////////////////////
 include_directories(
-    ${SDL2_INCLUDE_DIRS} 
+    ${SDL2_INCLUDE_DIRS}
     ${OPENGL_INCLUDE_DIR} 
-    ${GLEW_INCLUDE_DIRS} 
+    ${GLEW_INCLUDE_DIRS}
+    
     lib/glimac/include
     lib/third-party/include
-    lib/glm
+    lib
     src
     )
 
@@ -52,12 +53,15 @@ include_directories(
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BUILD_TYPE})
 add_executable(${PROJECT_NAME} ${MY_SOURCES})
 
+message(STATUS ${SDL2_INCLUDE_DIRS})
+
 target_link_libraries(
     ${PROJECT_NAME}
     ${OPENGL_LIBRARIES}
+    glimac
     ${SDL2_LIBRARIES}
     ${GLEW_LIBRARY}
-    glimac
+    
 )
 
 #if (WIN32)
