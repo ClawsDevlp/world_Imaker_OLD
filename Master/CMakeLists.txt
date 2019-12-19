@@ -22,6 +22,9 @@ if (WIN32)
 # Sur Linux
 else()
     find_package(SDL2 REQUIRED)
+    if(${SDL2_FOUND})
+      message(STATUS "SDL2 found")
+    endif()
 endif()
 
 # A décommenter sur machine de la fac
@@ -37,7 +40,7 @@ add_subdirectory(lib/glm)
 include_directories(
     ${SDL2_INCLUDE_DIRS} 
     ${OPENGL_INCLUDE_DIR} 
-    ${GLEW_INCLUDE_DIR} 
+    ${GLEW_INCLUDE_DIRS} 
     lib/glimac/include
     lib/third-party/include
     lib/glm
@@ -56,6 +59,23 @@ target_link_libraries(
     ${GLEW_LIBRARY}
     glimac
 )
+
+#if (WIN32)
+#  set(ALL_LIBRARIES 
+#    stb_image
+#    ${OPENGL_LIBRARIES}
+#    ${SDL2_LIBRARIES}
+#    ${GLEW_LIBRARY}
+#    glimac
+#    )
+#else()
+#  set(ALL_LIBRARIES 
+#    stb_image
+#    ${SDL2_LIBRARIES}
+#    ${OPENGL_LIBRARIES}
+#    ${GLEW_LIBRARY}
+#    glimac
+#    )
 
 if (UNIX)
     target_link_libraries(${PROJECT_NAME} -ldl)
