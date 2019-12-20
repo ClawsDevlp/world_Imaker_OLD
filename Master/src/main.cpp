@@ -80,8 +80,10 @@ int main(int argc, char** argv) {
 
                     if (e.key.keysym.sym == SDLK_UP) {
                         cursor.changeCoord(axe, 1);
+                        std::cout<<"en haut"<<std::endl;
                     } else if (e.key.keysym.sym == SDLK_DOWN){
                         cursor.changeCoord(axe, -1);
+                        std::cout<<"en bas"<< cursor.coord <<std::endl;
                     }
 
                     if (e.key.keysym.sym == SDLK_SPACE) {
@@ -97,8 +99,9 @@ int main(int argc, char** argv) {
          //scene.renvoiMatrice(camera, cursor.modifieCube(cursor.coord));
          scene.renvoiMatrice(camera, glm::mat4());
          
-         gestionator.dessinCube();
          cursor.dessinCursor();
+         gestionator.dessinCube();
+
         
          // Update the display
          windowManager.swapBuffers();

@@ -21,6 +21,6 @@ namespace glimac {
     }
 
     void Cursor::dessinCursor(){
-        cursorCube.dessinCube();
+        cursorCube.dessinCubeWireframe();
     }
 }

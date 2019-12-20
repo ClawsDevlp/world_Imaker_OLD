@@ -28,7 +28,7 @@ else()
 endif()
 
 # A décommenter sur machine de la fac
-# set(OPENGL_LIBRARIES /usr/lib/x86_64-linux-gnu/libGL.so.1)
+set(OPENGL_LIBRARIES /usr/lib/x86_64-linux-gnu/libGL.so.1)
 
 # ------------------------------ BUILD IF NEEDED ------------------------------
 

@@ -13,6 +13,7 @@ public:
      glm::vec3 coord;
      
      Cursor();
+     ~Cursor() = default;
      void changeCoord(int axe, int increment);
      void dessinCursor();
 };

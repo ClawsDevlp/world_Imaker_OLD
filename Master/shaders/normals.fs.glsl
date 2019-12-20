@@ -7,5 +7,5 @@ in vec2 vTexCoords; // Cordonnées de texture du sommet
 out vec3 fColor;
 
 void main(){
-	fColor = vNormal_vs;
+	fColor = vec3(1.0); //vNormal_vs;
 }

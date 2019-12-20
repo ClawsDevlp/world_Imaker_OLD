@@ -83,7 +83,7 @@ namespace glimac {
 
       glBindBuffer(GL_ARRAY_BUFFER, positionVbo);
       glEnableVertexAttribArray(VERTEX_ATTR_CUBE_POSITION);
-      glVertexAttribPointer(VERTEX_ATTR_CUBE_POSITION, 3, GL_FLOAT, GL_FALSE, sizeof(float), 0);
+      glVertexAttribPointer(VERTEX_ATTR_CUBE_POSITION, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), 0);
       glVertexAttribDivisor(VERTEX_ATTR_CUBE_POSITION, 1);
 
       glBindBuffer(GL_ARRAY_BUFFER, 0);
